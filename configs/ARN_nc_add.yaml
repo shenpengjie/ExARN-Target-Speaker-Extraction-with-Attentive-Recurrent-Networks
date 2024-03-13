@@ -1,0 +1,34 @@
+# experiment parameter
+SAMPLE_RATE: 8000
+FRAME_SIZE: 128
+FRAME_SHIFT: 16
+FEATURE_DIM: 512
+HIDDEN_DIM: 512
+LR: 0.001
+MAX_EPOCH: 200
+EPSILON: 0.0000001
+USE_CV: True
+EVAL_STEP: 2500
+
+# server setting
+CUDA_ID: '0'
+TT_CUDA: '0'
+BATCH_SIZE: 8
+NUM_WORK: 8
+
+
+# environment parameter
+TR_SPEECH_PATH: '/data02/data_set/wav8k/min/tr/'
+CV_SPEECH_PATH: '/data02/data_set/wav8k/min/cv/'
+TEST_PATH: '/data02/data_set/wav8k/max/tt/'
+SPEECH_LST: '/data02/data_set/wav8k/min/wsj0_2mix_extr_tr.spk'
+TR_SPEECH_BIN: '/data02/data_set/wsj0_2mix_bin_8K/'
+SPEECH_LEN: 32000
+
+
+OUTPUT_DIR: '/data02/exp_result/'
+OFFLINE_TEST_DIR: '/data02/exp_result/'
+BEST_MODEL: 'best.ckpt'
+MID_MODEL: 'val.ckpt'
+SAVE_BEST_ONLY: False
+WORKSPACE: '/ARN_extractor_ECAPA_mask_add_gln'
