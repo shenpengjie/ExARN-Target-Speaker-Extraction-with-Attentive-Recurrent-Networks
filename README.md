@@ -10,8 +10,8 @@ This is a project focused on target speaker extraction which is based on pytorch
 
 ## How to start train
 ***.yaml is the training configuration file, `TR_SPEECH_PATH represents` the training set path, `CV_SPEECH_PATH` represents the validation set path, `TEST_PATH` represents the test set path, and `SPEECH_LST` represents the list of speakers in the training set and validation set.
-If you want to train a model from scratch, execute the script: `python train.py -y ARN_nc.yaml `
 
+If you want to train a model from scratch, execute the script: `python train.py -y ARN_nc.yaml `
 If you want to load a model and train it, execute the script: `python train.py -y ARN_nc.yaml -m your_model_path`
 
 
