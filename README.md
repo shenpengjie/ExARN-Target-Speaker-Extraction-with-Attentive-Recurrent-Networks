@@ -8,7 +8,7 @@ This is a project focused on target speaker extraction which is based on pytorch
 ## Attentive block
 <div align=center><img src="https://github.com/shenpengjie/ExARN-Target-Speaker-Extraction-with-Attentive-Recurrent-Networks/blob/main/img/self-attention.png"></div>
 
-## How to start train
+## How to start training
 ***.yaml is the training configuration file, `TR_SPEECH_PATH represents` the training set path, `CV_SPEECH_PATH` represents the validation set path, `TEST_PATH` represents the test set path, and `SPEECH_LST` represents the list of speakers in the training set and validation set.
 
 If you want to train a model from scratch, execute the script: `python train.py -y ARN_nc.yaml `
